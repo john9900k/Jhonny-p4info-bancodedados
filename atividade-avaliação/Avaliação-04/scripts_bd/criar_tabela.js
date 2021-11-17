@@ -21,7 +21,7 @@ db.serialize(() => {
     });
 
     db.run(`create table if not exists TB_ALUNO_DISCIPLINA (
-        NOTA integer not null,
+        NOTA real not null,
         PERIODO integer not null,
         TB_ALUNOS_ID integer not null,
         TB_DISCIPLINAS_ID integer not null,
